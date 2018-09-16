@@ -1,3 +1,5 @@
+require 'pry'
+
 songs = [
   "Phoenix - 1901",
   "Tokyo Police Club - Wait Up",
@@ -19,9 +21,11 @@ I accept the following commands:
 - exit : exits this program
 HELP 
 
-puts help 
+  puts help 
 end
 
 def list(songs)
   songs.each_with_index do |song, i|
     puts "#{i+1}. #{song}"
+end 
+end 
